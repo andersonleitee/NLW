@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+   <head>
+    <meta charset="UTF-8"> <!--meta: configura metadados do html "charset=UTF-8" em especial, serve para dizer que o documento aceita caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--serve para que página se adapte a diversos tipos de tela-->
+    <title>Criar um ponto de coleta</title> <!--Configura o título da página-->
+
+    <!--Link de referencia para as fontes que foram usadas-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles/main.css"> <!--referencia ao main css-->
+    <link rel="stylesheet" href="/styles/create-point.css"><!--referencia ao create css-->
+
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+
+    </head>
+      <body>
+        <div id="page-create-point">
+
+            
+
+                <header>
+                   <img src="/assets/logo.svg" alt="Logomarca">     
+        
+                    <a href="http://google.com.br" >
+                        <span></span>
+                        Voltar para Home
+                    </a>
+                </header>
+
+                    <form action=""> <!--Para criar um formulário-->
+                      <h1>Cadastro de um ponto de coleta</h1>     
+                        <fieldset> <!--Coleção de campos-->
+                              <legend> 
+                                  <h2> Dados da entidade </h2>
+                              </legend> 
+                              
+                              <div class="field">
+                                  <label for="name">Nome da entidade </label> <!-- Label é o nome que fica por cima do campo-->
+                                  <input type="text" name="name">
+                              </div>
+
+                              <div class="field-group">
+                                    <div class="field">
+                                        <label for="address">Endereço</label>
+                                        <input type="text" name="address"> <!--Entrada de dados-->
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="address2">Número/Complemento</label>
+                                        <input type="text" name="address2">
+                                    </div>
+
+                              </div>
+
+                              <div class="field-group">
+
+                                    <div class="field">
+                                        <label for="state">Estado</label>
+                                            <select name="uf" >
+                                                <option value=""> Selecione o Estado</option>                            
+                                            </select>
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="city">Cidade</label>
+                                            <select name="city" disabled>
+                                                <option value="">Selecioe a Cidade</option>
+                                            </select>
+                                    </div>
+                             </div>
+
+
+
+                        </fieldset>
+
+                        <button type="submit"> <!--Vai submeter o formulário--> 
+                            Cadastrar ponto de coleta
+                        </button>
+
+
+                    </form>
+
+
+           
+
+        </div>
+    
+        <script src="scipts/create-point.js"></script>
+    </body>
+</html>
